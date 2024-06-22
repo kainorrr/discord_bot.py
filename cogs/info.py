@@ -39,14 +39,14 @@ class Information(commands.Cog):
         # Reference: https://github.com/AlexFlipnote/discord_bot.py/blob/master/LICENSE
         await ctx.send("\n".join([
             f"**{ctx.bot.user}** is powered by this source code:",
-            "https://github.com/AlexFlipnote/discord_bot.py"
+            "||STOP TRYING TO STEAL THIS BOTS SRC||"
         ]))
 
     @commands.command(aliases=["supportserver", "feedbackserver"])
     async def botserver(self, ctx: CustomContext):
         """ Get an invite to our support server! """
         if isinstance(ctx.channel, discord.DMChannel) or ctx.guild.id != 86484642730885120:
-            return await ctx.send(f"**Here you go {ctx.author.name} 🍻**\nhttps://discord.gg/DpxkY3x")
+            return await ctx.send(f"**Here you go {ctx.author.name} 🍻**\ndiscord.gg/loving")
         await ctx.send(f"**{ctx.author.name}** this is my home you know :3")
 
     @commands.command()
